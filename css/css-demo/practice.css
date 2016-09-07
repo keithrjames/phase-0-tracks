@@ -1,7 +1,7 @@
 #contact-info {
   font-size: .8em;
 }
-.job {
+.job:hover {
   background-color: #e9e5dc;
   border-radius: 10px 5%;
   padding: 20px, 30px;
@@ -10,4 +10,7 @@
 }
 .accomplish {
   font-size: .8em;
+}
+ol > li {
+font-size: 3em;
 }
