@@ -1,3 +1,8 @@
+puts "How many people will be taking this survey?"
+n = gets.chomp.to_i
+survey = 0
+until survey == n
+
 puts "What is your name?"
 name = gets.chomp
 puts "How old are you?"
@@ -72,4 +77,22 @@ if vampire_name == true
     vampire_result = "Results inconclusive."
 end
 
+vampire_allergy = "sunshine"
+
+puts "Do you have any allergies? Name all of them. Type Done when finished."
+
+allergy = ""
+
+until allergy == "Done"
+  allergy = gets.chomp
+  if allergy == vampire_allergy
+    vampire_result = "Probably a vampire."
+    break
+  end
+end
+
 puts vampire_result
+
+survey = survey + 1
+
+end
