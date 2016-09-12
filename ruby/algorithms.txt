@@ -16,3 +16,29 @@
 7. When the elevator reaches your floor:
 	- Wait for the elevator doors to open.
 	- Once the door is open, leave the elevator.
+
+
+Washing Hands
+
+- Wait until you reach the sink
+- When sink is reached, turn on water:
+	- If you want only hot water:
+		- Turn hot water faucet counter clockwise
+		- Leave cold water faucet alone
+	- If you want only cold water:
+		- Turn cold water faucet counter clockwise
+		- Leave hot water faucet alone
+	- If you want warm water:
+		- Turn hot water faucet counter clockwise
+		- Turn cold water faucet counter clockwise
+- Put soap on hands
+	- Until soap has been on hands for 10 seconds:
+		- Use hands to wash each other.
+- Put hands into stream of water
+	- Until all soap residue is off hands:
+		- Keep hands in stream of water.
+- Turn all faucets clockwise
+- Find towel
+	- Until hands are completely dry:
+		- Rub hands with towel.
+- Leave sink
