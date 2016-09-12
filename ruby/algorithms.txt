@@ -1,0 +1,18 @@
+1. Walk up to the outside of the elevator
+2. Look towards the walls surrounding the elevator and locate the “up and down” buttons (they are shaped like arrows pointing up or down).
+	- If you want to go up: Press the up arrow.
+	- If you want to go down: Press the down arrow.
+3. Until the elevator doors to open: 
+	- Wait for the elevator. 
+	- Once the elevator doors open, walk into the elevator.
+4. When inside the elevator locate the floor buttons. They will be on one of the walls closest to the elevator door.
+5. Only press the the button for the floor desired. Example:
+	- If you want to go to the 4th floor: Press ‘4’.
+	- If you want to go to the 9th floor: Press ‘9’.
+	- If you want to go to the 10th floor: Press ’10’.
+	- If you want to go to the 12th floor: Press ’12’.
+6. Until the elevator reaches the desired floor:
+	- Wait inside the elevator.
+7. When the elevator reaches your floor:
+	- Wait for the elevator doors to open.
+	- Once the door is open, leave the elevator.
