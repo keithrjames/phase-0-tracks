@@ -15,8 +15,6 @@ puts "What is the estimated age for your hamster?"
 est_age = gets.chomp.to_i
 if est_age == "".to_i
   est_age = nil
-#else
-  #est_age = gets.chomp.to_i
 end
 if adoption == true
   candidate = "good"
