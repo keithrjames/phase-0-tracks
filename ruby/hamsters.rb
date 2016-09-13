@@ -18,4 +18,13 @@ if est_age == "".to_i
 #else
   #est_age = gets.chomp.to_i
 end
-puts est_age.class
+if adoption == true
+  candidate = "good"
+else
+  candidate = "bad"
+end
+if est_age == nil
+  est_age = "unknown"
+end
+puts "Your hamster, #{name}, is a #{fur_color} hamster who is #{volume} decibels
+  loud. He is #{est_age} years old and is a #{candidate} candidate for adoption!"
