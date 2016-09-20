@@ -81,7 +81,11 @@ def update_hash
   else
     puts "Incorrect input"
   end
+
 puts "***************************"
+puts "***************************"
+puts "Final index for client:"
+
 puts client
 end
 
