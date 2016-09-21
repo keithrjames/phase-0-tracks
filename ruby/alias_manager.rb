@@ -1,15 +1,14 @@
 # first I need to swap the name
-# then I need to change the vowels to the next vowels
-
-
-#so first I would get a name
+# then I need to change the vowels to the next vowels or cons to next cons
+# then I would need to store each result in a database
+# then I would need to print each result when the user was finished.
 
 def name_swap(name)
-  name_store = name.split(' ')
-  name_store.reverse!
-  new_name = "#{name_store[0]} #{name_store[1]}"
+  name_store = name.downcase.split(' ')
+  swap_name = name_store.reverse!
+  new_name = "#{swap_name[0]} #{swap_name[1]}"
 end
-# could I just go over each letter of the string and check it against an array of vowels
+
 def vowel_shift(name)
   vowel = ["a","e","i","o","u"]
   consonants = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
@@ -32,7 +31,22 @@ def vowel_shift(name)
   return "Secret Agent #{name}, your code name is #{final_name}!"
 end
 
+def user_interface
+  puts "Welcome to the secret agent portal. Please enter the names of your secret agent team. When finished, please type 'quit'"
+  secret_database = []
+  loop do
+    name = gets.chomp
+    break if name == "quit"
+    vowel_shift(name)
+    secret_database.push(vowel_shift(name))
+  end
+  secret_database.each do |secret_name|
+    puts secret_name
+  end
+end
+
+
+
 ######Test Space ####
-vowel_shift("felicia torres")
-vowel_shift("bugs bunny")
+user_interface
 
