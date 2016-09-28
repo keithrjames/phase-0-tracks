@@ -1,6 +1,8 @@
 class Santa
   attr_accessor :name, :gender, :ethnicity, :age
+
   # Instance Methods
+
   def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
   end
@@ -31,27 +33,43 @@ class Santa
 
 end
 
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+example_names = ["Ken", "Keith", "Samantha", "Doris", "Bobby", "Ashley", "Goober" ]
+
 
 #####Driver code#####
 
-# santas = []
-# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-# example_names = ["Ken", "Keith", "Samantha", "Doris", "Bobby", "Ashley", "Goober" ]
-# example_genders.length.times do |i|
-#   santas << Santa.new(example_genders[i], example_ethnicities[i], example_names[i])
-# end
+puts "Welcome to the Santa Generator
 
-# puts santas
+....
 
-# santas.each do |santa|
-#   puts santa.doris_is_old
-# end
+....
 
-cris = Santa.new("Man", "White", "Keith")
-cris.speak
-cris.eat_milk_and_cookies("fudge")
-puts cris.celebrate_birthday
-puts cris.get_mad_at("Comet")
-cris.gender = "Bone Doggy"
-puts "my name gender is #{cris.gender}"
+....
+
+How many santas would you like to create?"
+
+santas_desired = gets.chomp.to_i
+
+counter = 0
+
+while counter < santas_desired
+  test_santa = Santa.new(example_genders[rand(example_genders.length)], example_ethnicities[rand(example_ethnicities.length)], example_names[rand(example_names.length)])
+  puts test_santa.age = rand(0..140)
+  puts test_santa.gender
+  puts test_santa.ethnicity
+  puts test_santa.name
+
+  # Running doris_is_old...should change all ages of santas named "Doris to 99."
+
+  test_santa.doris_is_old
+  puts test_santa.age
+
+  counter += 1
+end
+
+
+puts "...
+...
+Winter is coming."
