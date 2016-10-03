@@ -15,5 +15,11 @@ function reverse(s) {
   return o;
 }
 
- var new_string = reverse("Hello!")
+var new_string = reverse("Hello!");
 
+if (1 == 1) {
+   console.log(new_string);
+}
+else {
+  console.log("Whoops!");
+}
