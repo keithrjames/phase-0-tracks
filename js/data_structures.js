@@ -6,5 +6,12 @@ colors.push("grey");
 
 horses_names.push("Sam");
 
+var horses = {}
+
+for (var i = 0; i < colors.length; i++){
+  horses[horses_names[i]] = colors[i];
+}
+
+console.log(horses)
 
 
