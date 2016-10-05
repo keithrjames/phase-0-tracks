@@ -4,7 +4,7 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
+# Require relative is an add-on to the require method which works based of the relative path of the file that has the 'require_relative' in it. Require normally requires a full file path.
 #
 require_relative 'state_data'
 
