@@ -32,6 +32,16 @@ function keyValueMatch(object1, object2) {
     return match
 }
 
+function randomArray(array_amount) {
+  var array = []
+  var random_words = ["kfsjdhfksh", "skjfsdh", "sgkjfhgk", "eoirutoe", "tuerodutkg", "geoijg", "gugo", "kdjfhgiu"]
+  for (i = 0; i < array_amount; i++) {
+   array[i] = random_words[Math.floor(Math.random()*random_words.length)];
+  }
+  console.log(array)
+
+}
+
 
 ///Driver Code///
 
@@ -39,6 +49,17 @@ longestPhrase(["apple", "zebras", "helecopter"]);
 longestPhrase(["keith", "bucket", "dinosaur"]);
 longestPhrase(["chimney", "cat", "rabbit"]);
 
+
+
 console.log(keyValueMatch({name: "Steven", age: 54}, {name: "Tamir", age: 54}));
 console.log(keyValueMatch({age: 54, name: "Steven"}, {name: "Tamir", age: 54}));
 console.log(keyValueMatch({salad: "gurt", golf: "Yes"}, {salame: 45, buckets: "All day"}));
+
+
+
+
+
+console.log(randomArray(2));
+console.log(randomArray(6));
+console.log(randomArray(8));
+console.log(randomArray(10));
