@@ -38,28 +38,53 @@ function randomArray(array_amount) {
   for (i = 0; i < array_amount; i++) {
    array[i] = random_words[Math.floor(Math.random()*random_words.length)];
   }
-  console.log(array)
-
+  return array
 }
 
 
 ///Driver Code///
 
-longestPhrase(["apple", "zebras", "helecopter"]);
-longestPhrase(["keith", "bucket", "dinosaur"]);
-longestPhrase(["chimney", "cat", "rabbit"]);
+// longestPhrase(["apple", "zebras", "helecopter"]);
+// longestPhrase(["keith", "bucket", "dinosaur"]);
+// longestPhrase(["chimney", "cat", "rabbit"]);
 
 
 
-console.log(keyValueMatch({name: "Steven", age: 54}, {name: "Tamir", age: 54}));
-console.log(keyValueMatch({age: 54, name: "Steven"}, {name: "Tamir", age: 54}));
-console.log(keyValueMatch({salad: "gurt", golf: "Yes"}, {salame: 45, buckets: "All day"}));
+// console.log(keyValueMatch({name: "Steven", age: 54}, {name: "Tamir", age: 54}));
+// console.log(keyValueMatch({age: 54, name: "Steven"}, {name: "Tamir", age: 54}));
+// console.log(keyValueMatch({salad: "gurt", golf: "Yes"}, {salame: 45, buckets: "All day"}));
 
 
 
 
 
 console.log(randomArray(2));
+longestPhrase(randomArray(2));
+
 console.log(randomArray(6));
+longestPhrase(randomArray(6));
+
 console.log(randomArray(8));
+longestPhrase(randomArray(8));
+
 console.log(randomArray(10));
+longestPhrase(randomArray(10));
+
+console.log(randomArray(10));
+longestPhrase(randomArray(10));
+
+console.log(randomArray(10));
+longestPhrase(randomArray(10));
+
+console.log(randomArray(10));
+longestPhrase(randomArray(10));
+
+console.log(randomArray(10));
+longestPhrase(randomArray(10));
+
+console.log(randomArray(10));
+longestPhrase(randomArray(10));
+
+console.log(randomArray(10));
+longestPhrase(randomArray(10));
+
