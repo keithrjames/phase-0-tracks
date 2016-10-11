@@ -1,0 +1,61 @@
+1. sqlite> SELECT * FROM students;
+
+1|Keith|4|3
+2|Marley|2|2
+3|Paul|2|2
+4|Ringo|2|1
+5|Star|2|1
+
+2. sqlite> UPDATE students SET grade = 4 WHERE id = 3;
+sqlite> SELECT * FROM students;
+
+1|Keith|4|3
+2|Marley|2|2
+3|Paul|4|2
+4|Ringo|2|1
+5|Star|2|1
+
+3. sqlite> SELECT * FROM students, teachers WHERE students.teacher_id = teachers.id;
+
+1|Keith|4|3|3|Mrs. Lieberman|False
+2|Marley|2|2|2|Mrs. James|False
+3|Paul|4|2|2|Mrs. James|False
+4|Ringo|2|1|1|Mrs. Buckets|True
+5|Star|2|1|1|Mrs. Buckets|True
+
+4. sqlite> SELECT students.name, students.grade, teachers.name FROM students JOIN teachers ON students.teacher_id = teachers.id;
+
+Keith|4|Mrs. Lieberman
+Marley|2|Mrs. James
+Paul|4|Mrs. James
+Ringo|2|Mrs. Buckets
+Star|2|Mrs. Buckets
+
+
+5. sqlite> DELETE FROM students WHERE id = 2;
+sqlite> SELECT * FROM students;
+
+1|Keith|4|3
+3|Paul|4|2
+4|Ringo|2|1
+5|Star|2|1
+
+
+LEFT JOIN
+
+sqlite> SELECT teachers.name, students.name, grade FROM teachers LEFT JOIN students ON students.teacher_id = teachers.id;
+Mrs. Buckets|Ringo|2
+Mrs. Buckets|Star|2
+Mrs. James|Paul|4
+Mrs. Lieberman|Keith|4
+Mrs. Pickle||
+
+INNER JOIN
+
+sqlite> SELECT teachers.name, students.name, grade FROM teachers INNER JOIN students ON students.teacher_id = teachers.id;
+Mrs. Lieberman|Keith|4
+Mrs. James|Paul|4
+Mrs. Buckets|Ringo|2
+Mrs. Buckets|Star|2
+
+Right and Full Join are not currently supported.
