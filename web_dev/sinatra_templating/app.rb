@@ -25,3 +25,23 @@ post '/students' do
 end
 
 # add static resources
+
+#create skateboard page
+
+get '/skateboards' do
+@skateboards = {"Powell" => 7.75, "Birdhouse" => 7.75, "Flip" => 7.75}
+erb :skateboarding
+end
+
+get '/skateboards/new' do
+  erb :new_skateboard
+end
+
+post '/skateboards/charlie' do
+  @type = params[:type]
+  @size = params[:size]
+  @skateboards[@type] = [@size]
+  redirect '/skateboards'
+end
+
+# db.execute("INSERT INTO students (name, campus, age) VALUES (?,?,?)", [params['name'], params['campus'], params['age'].to_i])

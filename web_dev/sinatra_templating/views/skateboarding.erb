@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skateboarding</title>
+</head>
+<body>
+<h1>Kinds of Skateboards</h1>
+  <p>Welcome to the skateboard management system.</p>
+  <p>Click <a href="skateboards/new">here</a> to create a new skateboard.</p>
+  <ul>
+    <% @skateboards.each do |key, value| %>
+      <li><%= key %>, <%= value.to_s %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
