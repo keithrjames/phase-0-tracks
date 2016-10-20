@@ -1,0 +1,105 @@
+#main-h1 {
+  background-color: yellow;
+  font-size: 50px;
+  font-family: arial;
+  font-weight: bold;
+  padding-right: 100px;
+  /*margin: 0px;*/
+  text-align: left;
+  color: black;
+  border-bottom: solid 5px;
+}
+body {
+  background-color: grey;
+  font-family: arial;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 24px;
+}
+h2 {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 24px;
+  display: block;
+}
+.inline {
+  display: inline-block;
+  vertical-align: top;
+  color: yellow;
+  font-family: arial;
+  border: dashed 5px red;
+  height: 250px;
+  width: 40%;
+  padding: 10px;
+  margin: 2em;
+}
+.pt {
+  border-bottom: solid 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  width: 80%;
+  padding-left: 10%;
+  padding-right:10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq {
+  color: green;
+  margin: 50px;
+}
+
+a:visited {
+color: orange;
+}
+
+a:hover {
+color: hotpink;
+}
+cite {
+  color: yellow;
+  padding-left: 10%;
+}
+#external-links {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  display: inline-block;
+  margin-right: 200px;
+  background-color: yellow;
+}
+#external-header {
+  text-align: left;
+  color: black;
+}
+main {
+  width: 78%;
+  position: absolute;
+  display: inline-block;
+  margin-left: 20%;
+}
+table {
+  border: dashed 5px red;
+}
+@media screen and (max-width: 620px) {
+  img {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  body {
+    font-size: 8px;
+  }
+  #external-links {
+    font-size: 8px;
+  }
+}

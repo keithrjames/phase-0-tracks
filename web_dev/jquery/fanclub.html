@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fan Club</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id= "external-links">
+    <h1 id= "external-header">External Links</h1>
+    <ul>
+      <li><a href="FAQ.html">Frequently Asked Questions</a></li>
+      <li><a href="fanclub.html">Join Our Fan Club!</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </div>
+<main>
+  <h1>Join Our Fan Club!</h1>
+  <form name="Fan Club" action="https://httpbin.org/post" method="post">
+  <fieldset>
+    <div>
+      <label>Full name:</label>
+      <input type="text" name="fullname">
+    </div>
+
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email">
+    </div>
+
+    <div>
+      <label>Password:</label>
+      <input type="password" name="password">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div>
+      <label>Favorite Skateboard:</label>
+      <input type="text" name="Fav-Skate" placeholder="Insert Skateboard Here">
+    </div>
+
+    <div>
+      <label>Type of Board:</label>
+      <select name="Board">
+        <option value="Wood">Wood</option>
+        <option value="Wood">Plastic</option>
+        <option value="Wood">Sand</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Birthdate:</label>
+      <input type="date" name="birthdate">
+    </div>
+
+    <div>
+      <input type="checkbox" name="cb-agree" value="agree">
+      I am ready to join!.
+    </div>
+  </fieldset>
+
+  <button type="submit">Join the Club!</button>
+</form>
+</main>
+</body>
+</html>
