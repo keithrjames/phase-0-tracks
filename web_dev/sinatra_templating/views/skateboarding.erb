@@ -8,8 +8,8 @@
   <p>Welcome to the skateboard management system.</p>
   <p>Click <a href="skateboards/new">here</a> to create a new skateboard.</p>
   <ul>
-    <% @skateboards.each do |key, value| %>
-      <li><%= key %>, <%= value.to_s %></li>
+    <% @skateboards.each do |skateboard| %>
+      <li><%= skateboard['type'] %>, <%= skateboard['size'] %></li>
     <% end %>
   </ul>
 </body>
