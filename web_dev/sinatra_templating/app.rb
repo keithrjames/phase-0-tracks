@@ -28,8 +28,13 @@ end
 
 #create skateboard page
 
+db2 = SQLite3::Database.new("skateboards.db")
+db2.execute("CREATE TABLE IF NOT EXISTS skateboards(type varchar(255), size int)")
+db2.results_as_hash = true
+
+
 get '/skateboards' do
-@skateboards = {"Powell" => 7.75, "Birdhouse" => 7.75, "Flip" => 7.75}
+@skateboards = db2.execute("SELECT * FROM skateboards")
 erb :skateboarding
 end
 
@@ -38,10 +43,7 @@ get '/skateboards/new' do
 end
 
 post '/skateboards/charlie' do
-  @type = params[:type]
-  @size = params[:size]
-  @skateboards[@type] = [@size]
+ db2.execute("INSERT INTO skateboards (type, size) VALUES (?,?)", [params['type'], params['size'].to_f])
   redirect '/skateboards'
 end
 
-# db.execute("INSERT INTO students (name, campus, age) VALUES (?,?,?)", [params['name'], params['campus'], params['age'].to_i])
